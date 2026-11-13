@@ -14,13 +14,13 @@ return [
     */
 
     'enabled' => filter_var(
-        env('MAIL_WHITELIST_ENABLED', env('MAILGATE_ENABLED', false)),
+        env('MAILGATE_ENABLED', false),
         FILTER_VALIDATE_BOOLEAN,
     ),
 
     'addresses' => array_values(array_filter(array_map(
         'trim',
-        explode(',', (string) env('MAIL_WHITELIST_ADDRESSES', env('MAILGATE_ADDRESSES', ''))),
+        explode(',', (string) env('MAILGATE_ADDRESSES', '')),
     ))),
 
 ];

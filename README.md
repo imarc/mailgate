@@ -29,12 +29,10 @@ php artisan vendor:publish --tag=mailgate-config
 
 ## Configuration
 
-Environment variables (default config supports both naming conventions):
-
 | Env | Purpose |
 |-----|---------|
-| `MAILGATE_ENABLED` or `MAIL_WHITELIST_ENABLED` | `true` / `false` |
-| `MAILGATE_ADDRESSES` or `MAIL_WHITELIST_ADDRESSES` | Comma-separated exact email addresses |
+| `MAILGATE_ENABLED` | `true` / `false` |
+| `MAILGATE_ADDRESSES` | Comma-separated exact email addresses |
 
 Config keys (`config/mailgate.php`):
 

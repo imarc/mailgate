@@ -1,0 +1,36 @@
+{
+    "name": "imarc/mailgate",
+    "description": "Whitelist outgoing mail recipients in Laravel—filter To, Cc, and Bcc before send and cancel when no allowed addresses remain.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.8|^10.0",
+        "phpunit/phpunit": "^11.5.3|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Imarc\\Mailgate\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Imarc\\Mailgate\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Imarc\\Mailgate\\MailgateServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
